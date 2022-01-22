@@ -9,13 +9,47 @@
 /* Begin PBXBuildFile section */
 		7C53CDCA279C7CC3005F8ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDC9279C7CC3005F8ACD /* AppDelegate.swift */; };
 		7C53CDCC279C7CC3005F8ACD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDCB279C7CC3005F8ACD /* SceneDelegate.swift */; };
-		7C53CDCE279C7CC3005F8ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDCD279C7CC3005F8ACD /* ViewController.swift */; };
-		7C53CDD1279C7CC3005F8ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C53CDCF279C7CC3005F8ACD /* Main.storyboard */; };
 		7C53CDD3279C7CC5005F8ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C53CDD2279C7CC5005F8ACD /* Assets.xcassets */; };
 		7C53CDD6279C7CC5005F8ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C53CDD4279C7CC5005F8ACD /* LaunchScreen.storyboard */; };
 		7C53CDE1279C7CC5005F8ACD /* Clean_Swift_ExperimentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDE0279C7CC5005F8ACD /* Clean_Swift_ExperimentTests.swift */; };
 		7C53CDEB279C7CC5005F8ACD /* Clean_Swift_ExperimentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDEA279C7CC5005F8ACD /* Clean_Swift_ExperimentUITests.swift */; };
 		7C53CDED279C7CC5005F8ACD /* Clean_Swift_ExperimentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDEC279C7CC5005F8ACD /* Clean_Swift_ExperimentUITestsLaunchTests.swift */; };
+		7C53CE01279C7F5C005F8ACD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFB279C7F5C005F8ACD /* LoginPresenter.swift */; };
+		7C53CE02279C7F5C005F8ACD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFB279C7F5C005F8ACD /* LoginPresenter.swift */; };
+		7C53CE03279C7F5C005F8ACD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFB279C7F5C005F8ACD /* LoginPresenter.swift */; };
+		7C53CE04279C7F5C005F8ACD /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFC279C7F5C005F8ACD /* LoginWorker.swift */; };
+		7C53CE05279C7F5C005F8ACD /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFC279C7F5C005F8ACD /* LoginWorker.swift */; };
+		7C53CE06279C7F5C005F8ACD /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFC279C7F5C005F8ACD /* LoginWorker.swift */; };
+		7C53CE07279C7F5C005F8ACD /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFD279C7F5C005F8ACD /* LoginRouter.swift */; };
+		7C53CE08279C7F5C005F8ACD /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFD279C7F5C005F8ACD /* LoginRouter.swift */; };
+		7C53CE09279C7F5C005F8ACD /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFD279C7F5C005F8ACD /* LoginRouter.swift */; };
+		7C53CE0A279C7F5C005F8ACD /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFE279C7F5C005F8ACD /* LoginModels.swift */; };
+		7C53CE0B279C7F5C005F8ACD /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFE279C7F5C005F8ACD /* LoginModels.swift */; };
+		7C53CE0C279C7F5C005F8ACD /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFE279C7F5C005F8ACD /* LoginModels.swift */; };
+		7C53CE0D279C7F5C005F8ACD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFF279C7F5C005F8ACD /* LoginViewController.swift */; };
+		7C53CE0E279C7F5C005F8ACD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFF279C7F5C005F8ACD /* LoginViewController.swift */; };
+		7C53CE0F279C7F5C005F8ACD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CDFF279C7F5C005F8ACD /* LoginViewController.swift */; };
+		7C53CE10279C7F5C005F8ACD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE00279C7F5C005F8ACD /* LoginInteractor.swift */; };
+		7C53CE11279C7F5C005F8ACD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE00279C7F5C005F8ACD /* LoginInteractor.swift */; };
+		7C53CE12279C7F5C005F8ACD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE00279C7F5C005F8ACD /* LoginInteractor.swift */; };
+		7C53CE1A279CB44F005F8ACD /* OverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE14279CB44F005F8ACD /* OverviewPresenter.swift */; };
+		7C53CE1B279CB44F005F8ACD /* OverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE14279CB44F005F8ACD /* OverviewPresenter.swift */; };
+		7C53CE1C279CB44F005F8ACD /* OverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE14279CB44F005F8ACD /* OverviewPresenter.swift */; };
+		7C53CE1D279CB44F005F8ACD /* OverviewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE15279CB44F005F8ACD /* OverviewWorker.swift */; };
+		7C53CE1E279CB44F005F8ACD /* OverviewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE15279CB44F005F8ACD /* OverviewWorker.swift */; };
+		7C53CE1F279CB44F005F8ACD /* OverviewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE15279CB44F005F8ACD /* OverviewWorker.swift */; };
+		7C53CE20279CB44F005F8ACD /* OverviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE16279CB44F005F8ACD /* OverviewRouter.swift */; };
+		7C53CE21279CB44F005F8ACD /* OverviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE16279CB44F005F8ACD /* OverviewRouter.swift */; };
+		7C53CE22279CB44F005F8ACD /* OverviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE16279CB44F005F8ACD /* OverviewRouter.swift */; };
+		7C53CE23279CB44F005F8ACD /* OverviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE17279CB44F005F8ACD /* OverviewModels.swift */; };
+		7C53CE24279CB44F005F8ACD /* OverviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE17279CB44F005F8ACD /* OverviewModels.swift */; };
+		7C53CE25279CB44F005F8ACD /* OverviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE17279CB44F005F8ACD /* OverviewModels.swift */; };
+		7C53CE26279CB44F005F8ACD /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE18279CB44F005F8ACD /* OverviewViewController.swift */; };
+		7C53CE27279CB44F005F8ACD /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE18279CB44F005F8ACD /* OverviewViewController.swift */; };
+		7C53CE28279CB44F005F8ACD /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE18279CB44F005F8ACD /* OverviewViewController.swift */; };
+		7C53CE29279CB44F005F8ACD /* OverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE19279CB44F005F8ACD /* OverviewInteractor.swift */; };
+		7C53CE2A279CB44F005F8ACD /* OverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE19279CB44F005F8ACD /* OverviewInteractor.swift */; };
+		7C53CE2B279CB44F005F8ACD /* OverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C53CE19279CB44F005F8ACD /* OverviewInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +73,6 @@
 		7C53CDC6279C7CC3005F8ACD /* Clean Swift Experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean Swift Experiment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C53CDC9279C7CC3005F8ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C53CDCB279C7CC3005F8ACD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C53CDCD279C7CC3005F8ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C53CDD0279C7CC3005F8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C53CDD2279C7CC5005F8ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C53CDD5279C7CC5005F8ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C53CDD7279C7CC5005F8ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +81,18 @@
 		7C53CDE6279C7CC5005F8ACD /* Clean Swift ExperimentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clean Swift ExperimentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C53CDEA279C7CC5005F8ACD /* Clean_Swift_ExperimentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clean_Swift_ExperimentUITests.swift; sourceTree = "<group>"; };
 		7C53CDEC279C7CC5005F8ACD /* Clean_Swift_ExperimentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clean_Swift_ExperimentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C53CDFB279C7F5C005F8ACD /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		7C53CDFC279C7F5C005F8ACD /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		7C53CDFD279C7F5C005F8ACD /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		7C53CDFE279C7F5C005F8ACD /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		7C53CDFF279C7F5C005F8ACD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C53CE00279C7F5C005F8ACD /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		7C53CE14279CB44F005F8ACD /* OverviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewPresenter.swift; sourceTree = "<group>"; };
+		7C53CE15279CB44F005F8ACD /* OverviewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewWorker.swift; sourceTree = "<group>"; };
+		7C53CE16279CB44F005F8ACD /* OverviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewRouter.swift; sourceTree = "<group>"; };
+		7C53CE17279CB44F005F8ACD /* OverviewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewModels.swift; sourceTree = "<group>"; };
+		7C53CE18279CB44F005F8ACD /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		7C53CE19279CB44F005F8ACD /* OverviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +143,9 @@
 		7C53CDC8279C7CC3005F8ACD /* Clean Swift Experiment */ = {
 			isa = PBXGroup;
 			children = (
+				7C53CDF9279C7E55005F8ACD /* Scenes */,
 				7C53CDC9279C7CC3005F8ACD /* AppDelegate.swift */,
 				7C53CDCB279C7CC3005F8ACD /* SceneDelegate.swift */,
-				7C53CDCD279C7CC3005F8ACD /* ViewController.swift */,
-				7C53CDCF279C7CC3005F8ACD /* Main.storyboard */,
 				7C53CDD2279C7CC5005F8ACD /* Assets.xcassets */,
 				7C53CDD4279C7CC5005F8ACD /* LaunchScreen.storyboard */,
 				7C53CDD7279C7CC5005F8ACD /* Info.plist */,
@@ -125,6 +168,41 @@
 				7C53CDEC279C7CC5005F8ACD /* Clean_Swift_ExperimentUITestsLaunchTests.swift */,
 			);
 			path = "Clean Swift ExperimentUITests";
+			sourceTree = "<group>";
+		};
+		7C53CDF9279C7E55005F8ACD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7C53CDFA279C7E62005F8ACD /* Login */,
+				7C53CE13279CB419005F8ACD /* Overview */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7C53CDFA279C7E62005F8ACD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7C53CDFB279C7F5C005F8ACD /* LoginPresenter.swift */,
+				7C53CDFC279C7F5C005F8ACD /* LoginWorker.swift */,
+				7C53CDFD279C7F5C005F8ACD /* LoginRouter.swift */,
+				7C53CDFE279C7F5C005F8ACD /* LoginModels.swift */,
+				7C53CDFF279C7F5C005F8ACD /* LoginViewController.swift */,
+				7C53CE00279C7F5C005F8ACD /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7C53CE13279CB419005F8ACD /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				7C53CE14279CB44F005F8ACD /* OverviewPresenter.swift */,
+				7C53CE15279CB44F005F8ACD /* OverviewWorker.swift */,
+				7C53CE16279CB44F005F8ACD /* OverviewRouter.swift */,
+				7C53CE17279CB44F005F8ACD /* OverviewModels.swift */,
+				7C53CE18279CB44F005F8ACD /* OverviewViewController.swift */,
+				7C53CE19279CB44F005F8ACD /* OverviewInteractor.swift */,
+			);
+			path = Overview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +311,6 @@
 			files = (
 				7C53CDD6279C7CC5005F8ACD /* LaunchScreen.storyboard in Resources */,
 				7C53CDD3279C7CC5005F8ACD /* Assets.xcassets in Resources */,
-				7C53CDD1279C7CC3005F8ACD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +335,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C53CDCE279C7CC3005F8ACD /* ViewController.swift in Sources */,
+				7C53CE04279C7F5C005F8ACD /* LoginWorker.swift in Sources */,
+				7C53CE01279C7F5C005F8ACD /* LoginPresenter.swift in Sources */,
+				7C53CE23279CB44F005F8ACD /* OverviewModels.swift in Sources */,
+				7C53CE29279CB44F005F8ACD /* OverviewInteractor.swift in Sources */,
+				7C53CE1D279CB44F005F8ACD /* OverviewWorker.swift in Sources */,
+				7C53CE0A279C7F5C005F8ACD /* LoginModels.swift in Sources */,
+				7C53CE07279C7F5C005F8ACD /* LoginRouter.swift in Sources */,
+				7C53CE0D279C7F5C005F8ACD /* LoginViewController.swift in Sources */,
+				7C53CE26279CB44F005F8ACD /* OverviewViewController.swift in Sources */,
+				7C53CE1A279CB44F005F8ACD /* OverviewPresenter.swift in Sources */,
 				7C53CDCA279C7CC3005F8ACD /* AppDelegate.swift in Sources */,
+				7C53CE20279CB44F005F8ACD /* OverviewRouter.swift in Sources */,
 				7C53CDCC279C7CC3005F8ACD /* SceneDelegate.swift in Sources */,
+				7C53CE10279C7F5C005F8ACD /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C53CE0E279C7F5C005F8ACD /* LoginViewController.swift in Sources */,
+				7C53CE24279CB44F005F8ACD /* OverviewModels.swift in Sources */,
+				7C53CE1B279CB44F005F8ACD /* OverviewPresenter.swift in Sources */,
+				7C53CE1E279CB44F005F8ACD /* OverviewWorker.swift in Sources */,
+				7C53CE02279C7F5C005F8ACD /* LoginPresenter.swift in Sources */,
+				7C53CE27279CB44F005F8ACD /* OverviewViewController.swift in Sources */,
+				7C53CE2A279CB44F005F8ACD /* OverviewInteractor.swift in Sources */,
+				7C53CE11279C7F5C005F8ACD /* LoginInteractor.swift in Sources */,
+				7C53CE0B279C7F5C005F8ACD /* LoginModels.swift in Sources */,
 				7C53CDE1279C7CC5005F8ACD /* Clean_Swift_ExperimentTests.swift in Sources */,
+				7C53CE08279C7F5C005F8ACD /* LoginRouter.swift in Sources */,
+				7C53CE05279C7F5C005F8ACD /* LoginWorker.swift in Sources */,
+				7C53CE21279CB44F005F8ACD /* OverviewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +376,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C53CE0F279C7F5C005F8ACD /* LoginViewController.swift in Sources */,
+				7C53CE03279C7F5C005F8ACD /* LoginPresenter.swift in Sources */,
+				7C53CE25279CB44F005F8ACD /* OverviewModels.swift in Sources */,
+				7C53CE2B279CB44F005F8ACD /* OverviewInteractor.swift in Sources */,
+				7C53CE1F279CB44F005F8ACD /* OverviewWorker.swift in Sources */,
 				7C53CDEB279C7CC5005F8ACD /* Clean_Swift_ExperimentUITests.swift in Sources */,
 				7C53CDED279C7CC5005F8ACD /* Clean_Swift_ExperimentUITestsLaunchTests.swift in Sources */,
+				7C53CE12279C7F5C005F8ACD /* LoginInteractor.swift in Sources */,
+				7C53CE28279CB44F005F8ACD /* OverviewViewController.swift in Sources */,
+				7C53CE1C279CB44F005F8ACD /* OverviewPresenter.swift in Sources */,
+				7C53CE0C279C7F5C005F8ACD /* LoginModels.swift in Sources */,
+				7C53CE22279CB44F005F8ACD /* OverviewRouter.swift in Sources */,
+				7C53CE09279C7F5C005F8ACD /* LoginRouter.swift in Sources */,
+				7C53CE06279C7F5C005F8ACD /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C53CDCF279C7CC3005F8ACD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C53CDD0279C7CC3005F8ACD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C53CDD4279C7CC5005F8ACD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +548,6 @@
 				INFOPLIST_FILE = "Clean Swift Experiment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +575,6 @@
 				INFOPLIST_FILE = "Clean Swift Experiment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
