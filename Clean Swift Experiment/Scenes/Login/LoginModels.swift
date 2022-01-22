@@ -27,7 +27,7 @@ enum Login
         }
         struct ViewModel {
             let message: String
-            let isValid: Bool
+            let isLoginValid: Bool
         }
     }
 }

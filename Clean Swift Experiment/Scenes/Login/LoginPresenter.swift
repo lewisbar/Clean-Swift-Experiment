@@ -26,7 +26,7 @@ class LoginPresenter: LoginPresentationLogic
     func presentLoginFeedback(response: Login.LoginCheck.Response)
     {
         let message = response.isLoginValid ? Messages.validLogin : Messages.accessDenied
-        let viewModel = Login.LoginCheck.ViewModel(message: message, isValid: response.isLoginValid)
+        let viewModel = Login.LoginCheck.ViewModel(message: message, isLoginValid: response.isLoginValid)
         viewController?.displayLoginFeedback(viewModel: viewModel)
     }
     

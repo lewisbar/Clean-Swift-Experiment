@@ -22,9 +22,10 @@ class LoginViewController: UIViewController, LoginDisplayLogic
     var interactor: LoginBusinessLogic?
     var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
     
-    let feedbackTextField = UITextField()
-    let nameTextField = UITextField()
-    let passwordTextField = UITextField()
+    var nameTextField: UITextField!
+    var passwordTextField: UITextField!
+    var feedbackLabel: UILabel!
+    var goToOverviewButton: UIButton!
     
     // MARK: Object lifecycle
     
@@ -94,13 +95,24 @@ class LoginViewController: UIViewController, LoginDisplayLogic
         passwordLabel.font = UIFont.systemFont(ofSize: 14)
         passwordLabel.textColor = .white
         
+        nameTextField = UITextField()
         nameTextField.delegate = self
         nameTextField.placeholder = "Max Mustermann"
         nameTextField.backgroundColor = .white
         
+        passwordTextField = UITextField()
         passwordTextField.delegate = self
         passwordTextField.placeholder = "12345678"
         passwordTextField.backgroundColor = .white
+        
+        feedbackLabel = UILabel()
+        feedbackLabel.text = " "
+        
+        let action = UIAction(title: "Go to overview") { [unowned self]_ in
+            router?.route(to: OverviewViewController())
+        }
+        goToOverviewButton = UIButton(type: .system, primaryAction: action)
+        goToOverviewButton.alpha = 0
                 
         let nameStack = UIStackView(arrangedSubviews: [nameLabel, nameTextField])
         nameStack.axis = .horizontal
@@ -110,7 +122,12 @@ class LoginViewController: UIViewController, LoginDisplayLogic
         passwordStack.axis = .horizontal
         passwordStack.spacing = 8
         
-        let parentStack = UIStackView(arrangedSubviews: [welcomeLabel, nameStack, passwordStack, feedbackTextField])
+        let parentStack = UIStackView(arrangedSubviews: [
+            welcomeLabel,
+            nameStack,
+            passwordStack,
+            feedbackLabel,
+            goToOverviewButton])
         parentStack.axis = .vertical
         parentStack.alignment = .center
         parentStack.translatesAutoresizingMaskIntoConstraints = false
@@ -140,8 +157,9 @@ class LoginViewController: UIViewController, LoginDisplayLogic
     
     func displayLoginFeedback(viewModel: Login.LoginCheck.ViewModel)
     {
-        feedbackTextField.text = viewModel.message
-        feedbackTextField.textColor = viewModel.isValid ? .green : .red
+        feedbackLabel.text = viewModel.message
+        feedbackLabel.textColor = viewModel.isLoginValid ? .green : .red
+        goToOverviewButton.alpha = viewModel.isLoginValid ? 1 : 0
     }
 }
 
