@@ -87,25 +87,25 @@ class LoginViewController: UIViewController, LoginDisplayLogic
         
         let nameLabel = UILabel()
         nameLabel.text = "Username"
-        nameLabel.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
+        nameLabel.font = UIFont.systemFont(ofSize: Sizes.Fonts.labels)
         nameLabel.textColor = .white
         
         let passwordLabel = UILabel()
         passwordLabel.text = "Password"
-        passwordLabel.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
+        passwordLabel.font = UIFont.systemFont(ofSize: Sizes.Fonts.labels)
         passwordLabel.textColor = .white
         
         nameTextField = UITextField()
         nameTextField.delegate = self
         nameTextField.placeholder = "Max Mustermann"
-        nameTextField.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
+        nameTextField.font = UIFont.systemFont(ofSize: Sizes.Fonts.textFields)
         nameTextField.backgroundColor = .white
         nameTextField.addHorizontalInsets(width: Sizes.Spacing.tiny)
         
         passwordTextField = UITextField()
         passwordTextField.delegate = self
         passwordTextField.placeholder = "12345678"
-        passwordTextField.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
+        passwordTextField.font = UIFont.systemFont(ofSize: Sizes.Fonts.textFields)
         passwordTextField.backgroundColor = .white
         passwordTextField.addHorizontalInsets(width: Sizes.Spacing.tiny)
         
@@ -149,6 +149,10 @@ class LoginViewController: UIViewController, LoginDisplayLogic
         view.addSubview(parentStack)
 
         NSLayoutConstraint.activate([
+            nameTextField.heightAnchor.constraint(equalToConstant: Sizes.Spacing.textFieldHeight),
+            passwordTextField.heightAnchor.constraint(equalToConstant: Sizes.Spacing.textFieldHeight),
+            nameTextField.widthAnchor.constraint(equalToConstant: Sizes.Spacing.textFieldWidth),
+            passwordTextField.widthAnchor.constraint(equalToConstant: Sizes.Spacing.textFieldWidth),
             parentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             parentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
@@ -159,10 +163,13 @@ class LoginViewController: UIViewController, LoginDisplayLogic
                 static let small: CGFloat = 8
                 static let medium: CGFloat = 16
                 static let large: CGFloat = 48
+                static let textFieldHeight: CGFloat = 36
+                static let textFieldWidth: CGFloat = 200
             }
             struct Fonts {
                 static let title: CGFloat = 70
-                static let caption: CGFloat = 24
+                static let labels: CGFloat = 20
+                static let textFields: CGFloat = 20
             }
         }
     }
