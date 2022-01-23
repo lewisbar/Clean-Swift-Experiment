@@ -82,28 +82,32 @@ class LoginViewController: UIViewController, LoginDisplayLogic
         
         let welcomeLabel = UILabel()
         welcomeLabel.text = "Welcome"
-        welcomeLabel.font = UIFont.systemFont(ofSize: 25)
+        welcomeLabel.font = UIFont.systemFont(ofSize: Sizes.Fonts.title)
         welcomeLabel.textColor = .white
         
         let nameLabel = UILabel()
         nameLabel.text = "Username"
-        nameLabel.font = UIFont.systemFont(ofSize: 14)
+        nameLabel.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
         nameLabel.textColor = .white
         
         let passwordLabel = UILabel()
         passwordLabel.text = "Password"
-        passwordLabel.font = UIFont.systemFont(ofSize: 14)
+        passwordLabel.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
         passwordLabel.textColor = .white
         
         nameTextField = UITextField()
         nameTextField.delegate = self
         nameTextField.placeholder = "Max Mustermann"
+        nameTextField.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
         nameTextField.backgroundColor = .white
+        nameTextField.addHorizontalInsets(width: Sizes.Spacing.tiny)
         
         passwordTextField = UITextField()
         passwordTextField.delegate = self
         passwordTextField.placeholder = "12345678"
+        passwordTextField.font = UIFont.systemFont(ofSize: Sizes.Fonts.caption)
         passwordTextField.backgroundColor = .white
+        passwordTextField.addHorizontalInsets(width: Sizes.Spacing.tiny)
         
         feedbackLabel = UILabel()
         feedbackLabel.text = " "
@@ -114,24 +118,33 @@ class LoginViewController: UIViewController, LoginDisplayLogic
         goToOverviewButton = UIButton(type: .system, primaryAction: action)
         goToOverviewButton.alpha = 0
                 
-        let nameStack = UIStackView(arrangedSubviews: [nameLabel, nameTextField])
-        nameStack.axis = .horizontal
-        nameStack.spacing = 8
+        let labelStack = UIStackView(arrangedSubviews: [nameLabel, passwordLabel])
+        labelStack.axis = .vertical
+        labelStack.alignment = .trailing
+        labelStack.distribution = .fillEqually
+        labelStack.spacing = Sizes.Spacing.medium
         
-        let passwordStack = UIStackView(arrangedSubviews: [passwordLabel, passwordTextField])
-        passwordStack.axis = .horizontal
-        passwordStack.spacing = 8
+        let textFieldStack = UIStackView(arrangedSubviews: [nameTextField, passwordTextField])
+        textFieldStack.axis = .vertical
+        textFieldStack.alignment = .fill
+        textFieldStack.distribution = .fillEqually
+        textFieldStack.spacing = Sizes.Spacing.medium
+        
+        let middleStack = UIStackView(arrangedSubviews: [labelStack, textFieldStack])
+        middleStack.axis = .horizontal
+        middleStack.distribution = .fillProportionally
+        middleStack.spacing = Sizes.Spacing.medium
         
         let parentStack = UIStackView(arrangedSubviews: [
             welcomeLabel,
-            nameStack,
-            passwordStack,
+            middleStack,
             feedbackLabel,
             goToOverviewButton])
         parentStack.axis = .vertical
         parentStack.alignment = .center
         parentStack.translatesAutoresizingMaskIntoConstraints = false
-        parentStack.spacing = 8
+        parentStack.spacing = Sizes.Spacing.medium
+        parentStack.setCustomSpacing(Sizes.Spacing.large, after: welcomeLabel)
         
         view.addSubview(parentStack)
 
@@ -139,6 +152,19 @@ class LoginViewController: UIViewController, LoginDisplayLogic
             parentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             parentStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
+        
+        struct Sizes {
+            struct Spacing {
+                static let tiny: CGFloat = 4
+                static let small: CGFloat = 8
+                static let medium: CGFloat = 16
+                static let large: CGFloat = 48
+            }
+            struct Fonts {
+                static let title: CGFloat = 70
+                static let caption: CGFloat = 24
+            }
+        }
     }
     
     // MARK: Do something
@@ -167,5 +193,19 @@ extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         checkLogin()
         return true
+    }
+}
+
+extension UITextField {
+    func addHorizontalInsets(width: CGFloat) {
+        let rect = CGRect(x: 0, y: 0, width: width, height: frame.size.height)
+        
+        let leftSpacer = UIView(frame: rect)
+        leftViewMode = UITextField.ViewMode.always
+        leftView = leftSpacer
+        
+        let rightSpacer = UIView(frame: rect)
+        rightViewMode = UITextField.ViewMode.always
+        rightView = rightSpacer
     }
 }
